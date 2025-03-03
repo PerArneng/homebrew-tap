@@ -5,11 +5,11 @@ class Filefuser < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4b0c3edf0f08df49cb6115647f844c01f9e62bc64e52f7aa8c32844957945a30"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.5.0/filefuser-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4d4e35aec64990281c6ee2296b117b0fdb2ba99aee50d3acc7afdee1ac07e758"
     elsif Hardware::CPU.arm?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "08c4d2683e5de20dde0fedc42e7927d966c33d7ad8645700262a1cd44fac284b"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.5.0/filefuser-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "767b55d9e788c15306b88dae851632cf10cd52fadc9f98683dc4e1a69a7c9acb"
     end
 
     def install
@@ -19,11 +19,11 @@ class Filefuser < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dce53a87e03eeaafe47ad75bca1b5c85f0b3908e418a874947c80feb9bd1906d"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.5.0/filefuser-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1212bef537fc17893be444c152fbcda83e38a3aae916cd0ef75fce96e82fe91e"
     elsif Hardware::CPU.arm?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bc29d9ef3ef385cdefd1f5ef82cd1ee424c455a4292d2752c285239f666eb309"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.5.0/filefuser-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d073281ffcf981fcee933c6f2c58eaa334a593abbbec74acfbb97000754f2ea2"
     end
 
     def install
