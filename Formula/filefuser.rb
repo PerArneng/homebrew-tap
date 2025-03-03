@@ -1,15 +1,15 @@
 class Filefuser < Formula
   desc "CLI tool to fuse files together"
   homepage "https://github.com/PerArneng/filefuser"
-  license "Apache-2.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.3.0/filefuser-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "565b1912b9c9771ea5a303740ad7accdd73d86b5bf329d9fbdf8835bb8da9322"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4b0c3edf0f08df49cb6115647f844c01f9e62bc64e52f7aa8c32844957945a30"
     elsif Hardware::CPU.arm?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.3.0/filefuser-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "814ba101a1a3713c90b820f43a8278b3813bea26ecce2755b2b9716e67673f77"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "08c4d2683e5de20dde0fedc42e7927d966c33d7ad8645700262a1cd44fac284b"
     end
 
     def install
@@ -19,11 +19,11 @@ class Filefuser < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.3.0/filefuser-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3f46c70e974c740e853230bf8e8d5f6feb7206f286921b56f70060a9aa626eaa"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "dce53a87e03eeaafe47ad75bca1b5c85f0b3908e418a874947c80feb9bd1906d"
     elsif Hardware::CPU.arm?
-      url "https://github.com/PerArneng/filefuser/releases/download/v0.3.0/filefuser-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3fd0a438005f815a30c44469b670241343556ab2e2b9b6e8d371a5cf3410ea9b"
+      url "https://github.com/PerArneng/filefuser/releases/download/v0.4.0/filefuser-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bc29d9ef3ef385cdefd1f5ef82cd1ee424c455a4292d2752c285239f666eb309"
     end
 
     def install
@@ -32,6 +32,6 @@ class Filefuser < Formula
   end
 
   test do
-    system "#{bin}/filefuser", "--help"
+    system "\#<built-in function bin>/filefuser", "--help"
   end
 end
